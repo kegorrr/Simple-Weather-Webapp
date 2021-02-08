@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
+
 .App {
   text-align: center;
 }
@@ -26,6 +28,17 @@
 
 .App-link {
   color: #61dafb;
+}
+
+html, body {
+  height:100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+body{
+  background-image: linear-gradient(rgba(24, 168, 137, 0.7), rgb(32, 163, 238));
+  font-family: 'Open Sans', sans-serif;
 }
 
 @keyframes App-logo-spin {
