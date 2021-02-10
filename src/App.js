@@ -28,7 +28,7 @@ export default class App extends React.Component {
 
   async APICall(location) {
     if(location !== '') {
-      await Promise.resolve(fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=27cdc4cbad302e5ab9764663a9b4c69f`)
+      await Promise.resolve(fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=<API KEY>`)
         .then(res => res.json())
         .then(
           (result) => {
@@ -50,7 +50,7 @@ export default class App extends React.Component {
         )
       )
       if(this.state.lat !== null && this.state.lon !== null) {
-        const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.state.lat}&lon=${this.state.lon}&appid=27cdc4cbad302e5ab9764663a9b4c69f&units=imperial`
+        const url = `https://api.openweathermap.org/data/2.5/onecall?lat=${this.state.lat}&lon=${this.state.lon}&appid=<API KEY>&units=imperial`
         fetch(url)
             .then(res => res.json())
             .then(
